@@ -33,7 +33,7 @@ def visit_links(url, parent_id=None, depth=0, max_depth=5):
     chrome_options.add_argument("user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.3")
 
 
-    driver = webdriver.Chrome(executable_path='/opt/render/project/.render/chrome/opt/google/chrome/chrome', options=chrome_options)
+    driver = webdriver.Chrome(executable_path='/opt/render/project/.render/chrome/chromedriver', options=chrome_options)
 
     driver.maximize_window()
     driver.get(url)
