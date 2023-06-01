@@ -4,6 +4,10 @@ set -o errexit
 
 STORAGE_DIR=/opt/render/project/.render
 
+# Install unzip
+apt-get update
+apt-get install -y unzip --no-install-recommends
+
 if [[ ! -d $STORAGE_DIR/chrome ]]; then
   echo "...Downloading Chrome"
   mkdir -p $STORAGE_DIR/chrome
